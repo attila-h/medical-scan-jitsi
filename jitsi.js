@@ -15,4 +15,12 @@ const initJitsyIframe = () => {
   api = new JitsiMeetExternalAPI(domain, options);
 }
 
+const initGenerateNameButton = () => {
+  let button = document.createElement('button');
+  button.innerHTML = 'Random név generátor';
+  button.onclick = () => api.executeCommand('displayName', Math.random().toString(36).slice(2));
+  actionContainer.appendChild(button);
+}
+
 initJitsyIframe();
+initGenerateNameButton();
