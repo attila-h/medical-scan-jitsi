@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical-scan - Jitsi Meet Example</title>
-  <script src='https://meet.jit.si/external_api.js'></script>
-</head>
-<body>
-  <div style="display: flex; justify-content: center;">
-    <div id="jitsi-container"></div>
-  </div>
-  <script src="jitsi.js"></script>
-</body>
+<html lang="en" style="height: 100%;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical-scan - Jitsi Meet Example</title>
+    <script src='https://meet.jit.si/external_api.js'></script>
+  </head>
+  <body style="height: 100%; margin: 0; overflow: hidden;">
+    <div style="height: 100%; display: flex; justify-content: center;">
+      <div id="jitsi-action-container" style="width: 15%; padding: 10px;"></div>
+      <div id="jitsi-container" style="width: 70%; height: 100%;"></div>
+      <div id="jitsi-event-container" style="width: 15%; padding: 10px;"></div>
+    </div>
+    <script src="jitsi.js"></script>
+  </body>
 </html>
